@@ -20,6 +20,9 @@ validation_data = {
     'array': array 
     }
 
+# Cross validating the answer below shows that 'array' contains all the words
+# that don't begin with the prefix. Server still doesn't accecpt answer as
+# correct
 print json_response['array']
 print prefix
 print validation_data
