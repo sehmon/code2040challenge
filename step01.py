@@ -9,5 +9,4 @@ data = {
     }
 
 initial_response = requests.post(initial_endpoint, data=data)
-
 print initial_response.text

@@ -12,6 +12,7 @@ initial_response = requests.post(initial_endpoint, data=initial_data)
 
 json_response =  initial_response.json()
 prefix = json_response['prefix']
+# Filter the array and leave words that don't start with the given prefix
 array = [word for word in json_response['array'] if not word.startswith(prefix)]
 
 validation_data = {

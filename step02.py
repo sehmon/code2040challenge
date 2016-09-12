@@ -12,6 +12,7 @@ initial_response = requests.post(initial_endpoint, data=initial_data)
 
 validation_data = {
     'token': config.token,
+    # Iterate through the string and go backwards (-1)
     'string': initial_response.text[::-1]
     }
 

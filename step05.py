@@ -24,9 +24,6 @@ formatted_date = new_date.isoformat()
 formatted_date = formatted_date[:-6]
 formatted_date += 'Z'
 
-print json_response
-print formatted_date
-
 validation_data = {
     'token': config.token,
     'datestamp': formatted_date
